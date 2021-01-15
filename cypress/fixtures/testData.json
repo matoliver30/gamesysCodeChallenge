@@ -1,0 +1,13 @@
+{
+  "signUp": {
+    "validUsername": "SuperUser999",
+    "shortUsername": "SU",
+    "usernameWithSpace": "Super User",
+    "usernameWithInvalidChars": "$up3rUs3r",
+    "validPassword": "SuperPass999",
+    "shortPassword": "SuPwd9",
+    "missingUpperPassword": "superpass999",
+    "missingLowerPassword": "SUPERPASS999",
+    "missingNumberPassword": "SuperPass"
+  }
+}

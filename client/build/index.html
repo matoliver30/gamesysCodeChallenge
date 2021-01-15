@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gamesys - QA</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form class="container" id="form">
+            <h1>Sign Up</h1>
+
+            <h2 class="text-muted">Account</h2>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        name="username"
+                        aria-describedby="username-help"
+                    />
+                </div>
+                <small id="username-help" class="form-text text-muted">
+                    Usernames should have at least 3 alphanumeric characters, and no spaces are allowed.
+                </small>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" class="form-control" id="cpassword" name="cpassword">
+              </div>
+            </div>
+
+            <div class="form-check">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="termsandconditions"
+                    id="termsandconditions"
+                >
+                <label class="form-check-label" for="termsandconditions">
+                    I have read and agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-check">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="marketing"
+                    id="marketing"
+                >
+                <label class="form-check-label" for="marketing">
+                    I would like to receive targeted and personalized email campaigns about new products
+                </label>
+            </div>
+
+            <br />
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+
+            <br /><br />
+          </form>
+        <script type="module" src="scripts/main.mjs"></script>
+    </body>
+</html>

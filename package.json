@@ -1,0 +1,22 @@
+{
+  "name": "qa-automation-test",
+  "version": "1.0.0",
+  "description": "A technical test for the position of QA Automation",
+  "main": "index.js",
+  "author": "Community Phoenix",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.1",
+    "concurrently": "^5.3.0",
+    "cypress": "^5.3.0"
+  },
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "cypress:open": "cypress open",
+    "serve:client": "yarn workspace @qa-automation-test/client serve",
+    "start": "concurrently \"yarn serve:client\" \"yarn cypress:open\""
+  }
+}

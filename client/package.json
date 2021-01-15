@@ -1,0 +1,11 @@
+{
+  "name": "@qa-automation-test/client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "serve -s build"
+  },
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
